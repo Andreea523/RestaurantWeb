@@ -123,13 +123,13 @@
 
       <div class="container">
             <div class="row no-gutters">
-                <?php for($i = 0; $i < count($mancare); $i ++): ?>
+                <?php for($i = 0; $i < count($mancare); $i++): ?>
                     <?php if($i % 2 == 0): ?>
                     <div class="col-md-6">
                         <div class="sched d-block d-lg-flex">
-                            <div class="bg-image order-2">
-                                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="img-fluid" alt="" />';?>
-                            </div>                        
+                            <div class="bg-image" style="max-width:150px;">
+                                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="fh5co-card-item image-popup" alt="" />';?>
+                            </div>                      
                             <div class="text order-1" >
                                 <h3><?php echo $mancare[$i]->den; ?></h3>
                                 <p><?php echo $mancare[$i]->des; ?></p>
@@ -146,8 +146,8 @@
                         </div>
                     <?php else: ?>
                         <div class="sched d-block d-lg-flex">
-                            <div class="bg-image">
-                                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="img-fluid" alt="" />';?>
+                            <div class="bg-image" style="max-width:150px;">
+                                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="fh5co-card-item image-popup" alt="" />';?>
                             </div>
                             <div class="text order-1">
                                 <h3><?php echo $mancare[$i]->den; ?></h3>
