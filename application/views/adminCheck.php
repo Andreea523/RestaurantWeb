@@ -113,7 +113,7 @@
                 <?php
                 echo '<h1>Welcome, '.$this->session->userdata('username').'!</h1>';
                 echo '<br>';
-                echo anchor('LoginController/index','Logout');
+                echo anchor('LoginController/logout','Logout');
                 ?>
          </div>
         
