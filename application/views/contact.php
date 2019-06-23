@@ -134,18 +134,16 @@ jQuery(document).ready(function () {
 					<section>
         <div style="display: flex; flex-direction: column; ">
             <div style="margin-top: 25px;">
-                <iframe style="display:block; margin: 0 auto;" width="420" height="315"
-                    src="https://www.youtube.com/watch?v=UYhKDweME3A">
-                </iframe>
+                <iframe style="display:block; margin: 0 auto;" width="420" height="315" src="https://www.youtube.com/embed/UYhKDweME3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div>
                 <video width="420" height="315" controls style="display:block; margin: 0 auto;">
-                    <source src="../assets/video/video.mp4" type="video/mp4">
+                    <source src="../../assets/video/video.mp4" type="video/mp4">
                 </video>
             </div>
             <div style="margin-top: 25px; margin-bottom: 25px;">
                 <audio controls style="display:block; margin: 0 auto;">
-                    <source src="../assets/audio/audio.mp3" type="audio/mpeg">
+                    <source src="../../assets/audio/audio.mp3" type="audio/mpeg">
                 </audio>
             </div>   
             <div style="margin-top: 25px; margin-bottom: 25px;">

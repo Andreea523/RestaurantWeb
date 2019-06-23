@@ -124,27 +124,6 @@
       <div class="container">
             <div class="row no-gutters">
                 <?php for($i = 0; $i < count($mancare); $i++): ?>
-                    <?php if($i % 2 == 0): ?>
-                    <div class="col-md-6">
-                        <div class="sched d-block d-lg-flex">
-                            <div class="bg-image" style="max-width:150px;">
-                                <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="fh5co-card-item image-popup" alt="" />';?>
-                            </div>                      
-                            <div class="text order-1" >
-                                <h3><?php echo $mancare[$i]->den; ?></h3>
-                                <p><?php echo $mancare[$i]->des; ?></p>
-                                <p class="text-primary h3"><?php echo $mancare[$i]->pret. " RON"; ?></p>
-                                <?php if($this->session->logged == TRUE): ?>
-                                    <div class="row">
-                                        <a class="nav-link" href="<?php echo site_url('AdminController/editProduct/' . ($mancare[$i]->id1)); ?>">Edit</a>
-                                        <div class="nav-link">
-                                            <?php echo anchor(array('AdminController/deleteProduct/',$mancare[$i]->id1),'Delete',array('onclick'=>"return confirm('Do you want to delete this record?')"));?>
-                                        </div>
-                                    </div> 
-                                <?php endif;?>
-                            </div>
-                        </div>
-                    <?php else: ?>
                         <div class="sched d-block d-lg-flex">
                             <div class="bg-image" style="max-width:150px;">
                                 <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($mancare[$i]->image).'" class="fh5co-card-item image-popup" alt="" />';?>
@@ -163,10 +142,8 @@
                                 <?php endif;?>
                             </div>
                         </div>
-                    </div> 
-                    <?php endif; ?>
-                <?php endfor; ?>                      
-            </div>
+                <?php endfor; ?> 
+            </div>                      
         </div>
     </section> <!-- .section -->
 
